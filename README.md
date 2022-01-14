@@ -1,8 +1,8 @@
 # JS-Homeworks
-* List of homeworks with short description. *
+*List of homeworks with short description.*
 
-* hw1 - beginning
-* hw2 - strange calculator (simple functions, template strings)
+-hw1 - beginning
+-hw2 - strange calculator (simple functions, template strings)
 3. hw3 - variables
 4. hw4 - strange calculator 2
 5. hw5 - objects
