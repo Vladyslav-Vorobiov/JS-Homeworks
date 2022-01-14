@@ -1,11 +1,9 @@
 # JS-Homeworks
 Homeworks from JS course
 
-hw1 - beginning
-
-hw2 - strange calculator (simple functions, template strings)
-
-hw3 - variables
+1. hw1 - beginning
+2. hw2 - strange calculator (simple functions, template strings)
+3. hw3 - variables
 hw4 - strange calculator 2
 hw5 - objects
 hw6 - types and operators
