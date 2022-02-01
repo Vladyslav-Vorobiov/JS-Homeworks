@@ -35,4 +35,5 @@
 - hw33 - DOM, BOM
 - hw35 - DOM (generateList, generateTable)
 - hw36 - DOM (storages, list)
+- hw37 - regular expression for email validation
 - hw38 - DOM (todoList v1). Create task, remove task, remove all tasks, check for done)
