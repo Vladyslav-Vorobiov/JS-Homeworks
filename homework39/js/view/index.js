@@ -96,15 +96,15 @@ const view = {
       this.currentItemId = data[data.length - 1].itemId;
 
       const iterator = data[Symbol.iterator]();
-	  let nextStep = iterator.next();
+      let nextStep = iterator.next();
 
-		while (!iterator.done) {
-			const currentIteratorStep = nextStep.value;
-			if (nextStep.done) break;
+	  while (!iterator.done) {
+		const currentIteratorStep = nextStep.value;
+		if (nextStep.done) break;
 
-			this.todoContainer.prepend(this.createTemplate(currentIteratorStep));
-			nextStep = iterator.next();
-		}
+		this.todoContainer.prepend(this.createTemplate(currentIteratorStep));
+		nextStep = iterator.next();
+	}
     },
 
     removeElement({target}) {
