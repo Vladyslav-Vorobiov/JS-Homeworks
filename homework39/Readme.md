@@ -6,5 +6,6 @@
 - Bootstrap v5
 - JavaScript
 - MVC
+- Object Iterator (view file, appendData method)
 
 Логика находится в папке ```js```
