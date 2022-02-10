@@ -90,16 +90,16 @@ const view = {
     },
 
     appendData() {
-      const data = this.controller.getData(this.formId);
-      if(data === null || data.length === 0) return;
+        const data = this.controller.getData(this.formId);
+        if(data === null || data.length === 0) return;
 
-      this.currentItemId = data[data.length - 1].itemId;
+        this.currentItemId = data[data.length - 1].itemId;
 
-      const iterator = data[Symbol.iterator]();
-	  let nextStep = iterator.next();
+        const iterator = data[Symbol.iterator]();
+	    let nextStep = iterator.next();
 
 		while (!iterator.done) {
-			const currentIteratorStep = nextStep.value;
+		    const currentIteratorStep = nextStep.value;
 			if (nextStep.done) break;
 
 			this.todoContainer.prepend(this.createTemplate(currentIteratorStep));
