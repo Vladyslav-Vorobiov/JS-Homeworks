@@ -95,16 +95,25 @@ const view = {
 
         this.currentItemId = data[data.length - 1].itemId;
 
+<<<<<<< HEAD
         const iterator = data[Symbol.iterator]();
 	    let nextStep = iterator.next();
 
 		while (!iterator.done) {
 		    const currentIteratorStep = nextStep.value;
 			if (nextStep.done) break;
+=======
+      const iterator = data[Symbol.iterator]();
+      let nextStep = iterator.next();
 
-			this.todoContainer.prepend(this.createTemplate(currentIteratorStep));
-			nextStep = iterator.next();
-		}
+	  while (!iterator.done) {
+		const currentIteratorStep = nextStep.value;
+		if (nextStep.done) break;
+>>>>>>> ec7ded9f97df85384021764101f059504497f3f1
+
+		this.todoContainer.prepend(this.createTemplate(currentIteratorStep));
+		nextStep = iterator.next();
+	}
     },
 
     removeElement({target}) {
