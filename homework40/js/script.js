@@ -1,3 +1,5 @@
+'use strict'
+
 function cacheAbility () {
 
     let cache = new Map()
