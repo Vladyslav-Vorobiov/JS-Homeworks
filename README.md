@@ -39,3 +39,4 @@
 - hw38 - DOM (todoList v1). Create task, remove task, remove all tasks, check for done
 - hw39 - DOM (todoList). The same as hw38, but object iterator used (view - appendData method)
 - hw40 - Map/set, closures, cache / кэширование через замыкание
+- hw41 - functions constructors. Operator new / функции-конструкторы, оператор new.
