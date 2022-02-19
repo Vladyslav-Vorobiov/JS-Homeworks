@@ -12,12 +12,12 @@ function Student(firstName, lastName, yearOfBirth) {
 Student.prototype = {
   constructor: Student,
 
-  getAge: function () {
+  getAge() {
     let currentYear = 2022;
     return currentYear - this.yearOfBirth;
   },
 
-  addValueToArray: function (arr, value) {
+  addValueToArray(arr, value) {
     if (arr[arr.length - 1] !== undefined)
       throw new Error(`Array is fulfilled. You may add only 10 values`);
 
@@ -29,22 +29,22 @@ Student.prototype = {
     }
   },
 
-  present: function () {
+  present() {
     return this.addValueToArray(this.visits, true);
   },
 
-  absent: function () {
+  absent() {
     return this.addValueToArray(this.visits, false);
   },
 
-  mark: function (num) {
+  mark(num) {
     if (num < 0 || num > 10)
       throw new Error(`Please enter a valid mark from 1 to 10`);
 
     return this.addValueToArray(this.marks, num);
   },
 
-  getAverage: function (array) {
+  getAverage(array) {
     const averageValue = array.reduce(
       function (acc, current, index, arr) {
         if (arr[index] !== undefined) {
@@ -59,7 +59,7 @@ Student.prototype = {
     return averageValue.sum / averageValue.counter;
   },
 
-  summary: function () {
+  summary() {
     const averageVisits = this.getAverage(this.visits);
     const averageMark = this.getAverage(this.marks);
 
