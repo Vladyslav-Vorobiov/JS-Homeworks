@@ -33,7 +33,7 @@ function makeCounter(accum = 0) {
     },
     clearAll() {
       this.clearCounter();
-      this.clearStatistic();
+      this.clearStatistics();
       return { accum, statisctics };
     },
   };
