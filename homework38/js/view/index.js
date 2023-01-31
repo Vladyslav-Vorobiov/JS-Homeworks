@@ -4,7 +4,7 @@ const view = {
   controller: null,
   formId: "todoForm",
   todoContainerId: "todoItems",
-  removeAllBtnId: "clearAllBtn",
+  removeAllBtnId: "removeAllBtn",
   form: null,
   todoContainer: null,
   currentItemId: 0,
