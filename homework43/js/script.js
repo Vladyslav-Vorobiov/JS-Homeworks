@@ -77,19 +77,16 @@ class Student extends Human {
     const averageMark = this.#getAverage(this._marks);
 
     if (!averageVisits && !averageMark) {
-      console.log(`No data about ${this._firstName} to show summary yet!`);
+      return `No data about ${this._firstName} to show summary yet!`;
     } else if (averageVisits < 0.9 && averageMark < 9) {
-      console.log(`${this._firstName}, you're radish!`);
+      return `${this._firstName}, you're radish!`;
     } else if (averageVisits < 0.9 || averageMark < 9) {
-      console.log(`Not bad ${this._firstName}, but you can better!`);
+      return `Not bad ${this._firstName}, but you can better!`;
     } else {
-      console.log(`Wooow! Well done, ${this._firstName}!`);
+      return `Wooow! Well done, ${this._firstName}!`;
     }
   }
 }
-
-console.log(Human.getFullName("Ivanova"));
-console.log(Student.getFullName("Pupkin"));
 
 const vasya = new Student("Vasya", "Pupkin", 1990);
 const petya = new Student("Petya", "Golovkin", 1820);
